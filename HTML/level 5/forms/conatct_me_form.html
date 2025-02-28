@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT ME FORM</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="enter your name"
+      /><br />
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="enter your email"
+      /><br />
+      <label for="contact">contact </label>
+      <input
+        type="tel"
+        id="contact"
+        name="contact"
+        required
+        placeholder="9998887776"
+      /><br />
+
+      <label for="textarea">Message</label><br />
+      <textarea name="message" id="textarea" required></textarea><br />
+      <label for="enquiry">Subject</label>
+      <select name="enquiry_type" id="enquiry">
+        <option value="" disabled selected>Select an option</option>
+        <option value="job opportunity">job opportunity</option>
+        <option value="collaboration">collaboration</option>
+        <option value="general query">general query</option>
+        <option value="others">other</option></select
+      ><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

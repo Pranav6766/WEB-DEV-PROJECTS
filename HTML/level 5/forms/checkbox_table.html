@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input types</title>
+  </head>
+  <body>
+    <table>
+        <caption>Which fruit do you like?</caption>
+      <tr>
+        <th>Fruits</th>
+        <th>Liking</th>
+      </tr>
+
+      <tr>
+        <td><label for="apple">apple </label></td>
+        <td>
+          <input type="checkbox" id="apple" name="fruits" value="apple" /><br />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="banana">banana </label>
+        </td>
+        <td>
+          <input
+            type="checkbox"
+            id="banana"
+            name="fruits"
+            value="banana"
+          /><br />
+        </td>
+      </tr>
+      <tr>
+        <td>Guava</td>
+        <td>
+          <input type="checkbox" id="guava" name="fruits" value="guava" />
+        </td>
+      </tr>
+    </table>
+    <form>
+      <hr />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
