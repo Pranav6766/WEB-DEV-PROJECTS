@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      header {
+        background-color: greenyellow;
+      }
+      #nav {
+        /* margin: 200px; */
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        margin-left: 250px;
+      }
+      #div1 {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border: 2px solid;
+        border-radius: 50%;
+
+        position: fixed;
+        top: 38px;
+        right: 10px;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        display: inline-block;
+      }
+      #div-container{
+        position: relative;
+        border: 5px dashed;
+      }
+      #box2{
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        z-index: 2;
+        background-color: blueviolet;
+      }
+      footer{
+        position: fixed;
+        bottom: 1px;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <a href="#">about</a>
+        <a href="#">resources</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+    <main>
+      <div id="div1">div 1</div>
+      <div id="div-container">
+        <div class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </main>
+    <footer>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in
+      exercitationem cupiditate doloremque. Vitae eveniet numquam voluptatem
+      corporis veniam magnam aut nobis error, facilis itaque voluptatum!
+      Distinctio facere ipsa a neque saepe sit. Assumenda minima blanditiis et.
+      Aliquid magni alias voluptates amet! Possimus adipisci voluptatum nam
+      reprehenderit, non temporibus ducimus.
+    </footer>
+  </body>
+</html>

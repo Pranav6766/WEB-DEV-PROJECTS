@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>set 7</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 25px;
+        width: 90%;
+        background-color: gainsboro;
+        border: 2px solid;
+        border-radius: 20px;
+        position: relative;
+        left: 4%;
+      }
+      #bar {
+        height: 100%;
+        width: 0px;
+        border-radius: 20px;
+        background-color: rgba(0, 255, 0, 0.8);
+
+        animation: load 4s ease 1s infinite normal;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0%;
+        }
+        90%{
+            width: 96%;
+        }
+        95%{
+            width: 91%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="bar"></div>
+    </div>
+  </body>
+</html>

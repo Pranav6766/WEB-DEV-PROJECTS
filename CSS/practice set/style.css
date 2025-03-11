@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+}
+#nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(124, 224, 224);
+  padding: 5px;
+}
+#div1 {
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.container {
+  display: flex;
+  border: 2px solid;
+  width: 350px;
+}
+.box {
+  margin: 2px;
+  height: 80px;
+  width: 80px;
+  background-color: blueviolet;
+  flex-shrink: 0;
+}
+#third {
+  background-color: chartreuse;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+#last {
+  height: 50px;
+  width: 50px;
+  border: 2px solid rgb(240, 148, 8);
+}
+@media screen and (max-width: 300px) {
+  #last {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  #last {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 400px) {
+  #last {
+    background-color: blue;
+  }
+}

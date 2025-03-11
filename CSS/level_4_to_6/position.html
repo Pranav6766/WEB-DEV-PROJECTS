@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 0, 0,0.65);
+            margin: 2px;
+        }
+        #first{
+            position: static;
+        }
+        #second{
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+        #third{
+            position: fixed;
+            top: 30px;
+            left: 120px;
+        }
+        #fourth{
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">div 1 static</div>
+    <div id="second">div 2 relative</div>
+    <div id="third">div 3 fixed </div>
+    <div id="fourth">div 4 absolute</div>
+</body>
+</html>

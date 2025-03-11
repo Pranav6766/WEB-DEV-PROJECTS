@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>animations</title>
+    <style>
+      .box {
+        height: 80px;
+        width: 80px;
+        border: 2px solid;
+        border-radius: 5px;
+        background-color: plum;
+        position: relative;
+        top: 20px;
+        left: 10px;
+
+        animation-name: ghumna;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.3s;
+        /*till now it repeats itself only once*/
+        animation-iteration-count: infinite; 
+        animation-direction: alternate;
+      }
+
+     /* @keyframes ghumna{
+        from{
+            left:10px; yha se start hoga
+        }
+        to{
+            left: 200px; yha pe end hoga
+        }
+      }*/
+      @keyframes ghumna{
+        0% {left: 10px; }
+        55% {left: 100px; top: 80px;}
+        100% {left: 200px; top: 10px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">box 1</div>
+  </body>
+</html>
