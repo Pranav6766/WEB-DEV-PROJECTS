@@ -1,0 +1,19 @@
+.green-btn{
+  background-color: lightgreen;
+  padding: 5px 18px;
+  border: none;
+  border-radius: 10px;
+}
+.green-btn:hover{
+  text-decoration: underline;
+  background-color: lightblue;
+}
+.wish-btn{
+  padding: 5px 40px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+.wish-btn:hover{
+  text-decoration: underline;
+  background-color: lightblue;
+}

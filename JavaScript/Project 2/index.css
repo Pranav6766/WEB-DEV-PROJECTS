@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+.btn{
+  height: 120px;
+  width: 120px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(164,212,130);
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+}
+.btn img{
+  height: 100%;
+  object-fit: contain;
+}

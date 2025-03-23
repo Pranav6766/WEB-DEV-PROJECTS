@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Myntra Bag Exercise</title>
+    <link rel="stylesheet" href="/css/myntra_bag.css" />
+  </head>
+  <body>
+    <button class="green-btn" onclick="updateCart(1)">Add to Bag</button>
+    <button class="wish-btn" onclick="updateCart(-1)">MOVE TO WISHLIST</button>
+    <button class="green-btn" onclick="updateCart(2)">Add 1+1 sale item</button>
+    <h2 id="cart-summary">Your cart has 0 items.</h2>
+
+    <script>
+      let noOfItems = 0;
+
+      function updateCart(count) {
+        noOfItems += count;
+        document.querySelector("#cart-summary").innerText =
+          "Your cart has " + noOfItems + " items.";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/Project_Calculator/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" class="screen" readonly />
+        <div class="function">
+          <div class="row">
+            <button class="btn" onclick="clearscreen()">AC</button>
+            <button class="btn" onclick="add('/100 *')">%</button>
+            <button class="btn" onclick="add('**')">^</button>
+            <button class="btn" onclick="add('/')">/</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="add('7')">7</button>
+            <button class="btn" onclick="add('8')">8</button>
+            <button class="btn" onclick="add('9')">9</button>
+            <button class="btn" onclick="add('*')">*</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="add('4')">4</button>
+            <button class="btn" onclick="add('5')">5</button>
+            <button class="btn" onclick="add('6')">6</button>
+            <button class="btn" onclick="add('-')">-</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="add('1')">1</button>
+            <button class="btn" onclick="add('2')">2</button>
+            <button class="btn" onclick="add('3')">3</button>
+            <button class="btn" onclick="add('+')">+</button>
+          </div>
+          <div class="row" id="last-row">
+            <button class="btn" onclick="add('00')">00</button>
+            <button class="btn" onclick="add('0')">0</button>
+            <button class="btn" onclick="add('.')">.</button>
+            <button class="btn" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Project_Calculator/index.js"></script>
+  </body>
+</html>
