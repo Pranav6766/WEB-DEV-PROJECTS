@@ -12,18 +12,23 @@ if (myTime > 6 && myTime < 12) {
 
 //2.
 let person = " Rana.";
-console.log(greet + person);
+document.querySelector(".greet").innerText = greet + person;
 
 //3.
 
-let newTime = JSON.parse(localStorage.getItem('newTime')) || 0;
+let noOfTimesClicked = JSON.parse(localStorage.getItem("noOfTimesClicked")) || 0;
+updateButton();
 function fun() {
-  newTime++;
-  localStorage.setItem('newTime',JSON.stringify(newTime));
-  if (newTime % 2 == 0) {
+  noOfTimesClicked++;
+  localStorage.setItem("noOfTimesClicked", JSON.stringify(noOfTimesClicked));
+  updateButton();
+}
+
+function updateButton() {
+  if (noOfTimesClicked % 2 == 0) {
     document.querySelector(".btn").style.backgroundColor = "lightgreen";
   } else {
     document.querySelector(".btn").style.backgroundColor = "lightblue";
   }
-  document.querySelector(".data").innerText = `${newTime} times.`;
+  document.querySelector(".data").innerText = `${noOfTimesClicked}`;
 }
