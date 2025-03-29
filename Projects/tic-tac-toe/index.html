@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          MyTicTacToe.com
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="game-container">
+        <div class="container">
+          <div class="line"></div>
+          <div class="box bl-0 bt-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bt-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bt-0 br-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bl-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box br-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bd-0 bl-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bd-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+          <div class="box bd-0 br-0" onclick="playMyTurn(this)">
+            <span class="box-text"></span>
+          </div>
+        </div>
+        <div class="game-info">
+          <h1>Welcome to tic tac toe.</h1>
+          <div>
+            <span class="info">Turn for X</span>
+            <button id="reset" onclick="refreshGame()">Reset</button>
+          </div>
+          <div class="imgbox">
+            <img src="excited.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
