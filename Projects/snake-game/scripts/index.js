@@ -18,13 +18,32 @@ let snakeArr = [
 const a = 2;
 const b = 16;
 //food is not array it is single object
-let food = {
-  x: Math.round(a + (b - a) * Math.random()),
-  y: Math.round(a + (b - a) * Math.random()),
-};
+let food = generateFood();
 
 displayScore();
+//check if food overlaps with snake body
+function generateFood() {
+  let newFood;
+  let isOnSnake;
+  
+  do {
+    isOnSnake = false;
+    newFood = {
+      x: Math.round(a + (b - a) * Math.random()),
+      y: Math.round(a + (b - a) * Math.random()),
+    };
 
+    // Check if food overlaps with any part of the snake
+    snakeArr.forEach((element) => {
+      if (element.x === newFood.x && element.y === newFood.y) {
+        isOnSnake = true; // Mark as invalid, will retry
+      }
+    });
+
+  } while (isOnSnake); // Repeat until we get a valid position
+
+  return newFood;
+}
 //game functions
 function main(curr_time) {
   window.requestAnimationFrame(main);
@@ -71,8 +90,9 @@ function gameEngine() {
     inputDir.y = 0;
     highScore = Math.max(score, highScore);
     localStorage.setItem("highScore", JSON.stringify(highScore));
-    alert("Game Over. Press any key to play again.");
+    alert("Game Over.");
     snakeArr = [{ x: 13, y: 15 }];
+    food = generateFood();
     // bgMusic.play();
     score = 0;
     displayScore();
@@ -89,10 +109,7 @@ function gameEngine() {
     });
     //generate new food place
     //can have values between 0 to 17 but lets keep it easy
-    food = {
-      x: Math.round(a + (b - a) * Math.random()),
-      y: Math.round(a + (b - a) * Math.random()),
-    };
+    food = generateFood();
   }
   //move the snake
   //-> har block ko uske aage wla pe rkh do
