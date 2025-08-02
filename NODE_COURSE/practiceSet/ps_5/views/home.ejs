@@ -1,0 +1,41 @@
+<%- include("partials/head")%>
+  </head>
+  <body> 
+    <style>
+      img{
+        max-width: 20%;
+        margin-right: 50%;
+      }
+    </style>
+    <header class="bg-blue-600 mb-2">
+      <h1 class="text-white text-3xl text-center p-4">Welcome to airbnb.</h1>
+    </header>
+    <main class="flex justify-center mb-3">
+      <a
+        href="/host/add-home"
+        class="bg-amber-600 text-white p-2 rounded-lg shadow-lg"
+        >Add home</a
+      >
+    </main>
+    <div class="w-full max-w-md mx-auto bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Registered Houses</h2>
+      <ul class="divide-y divide-gray-200">
+        <% registeredHomes.forEach(home => { %>
+          <li class=" py-1.5 px-1 text-gray-700 hover:bg-gray-50 rounded transition-colors flex">
+            <img src="<%= home.houseImage %>" alt="<%= home.houseName %>">
+           <div class="text-lg">
+             <div><%= home.houseName %></div>
+             <div><%=  "Rs."+home.housePrice +"/day"%></div>
+             <div><%= home.houseLocation%></div>
+            <% if(home.houseRating) {%>
+            <div><%= home.houseRating %></div>
+            <%} else {%>
+            <div><%= "No Rating yet" %></div>
+            <% } %>
+           </div>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>

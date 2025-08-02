@@ -73,6 +73,9 @@ nav {
   background-color: #911d91;
 }
 #reset {
+  position: absolute;
+  top: 70vh;
+  right: 40vw;
   padding: 5px 20px;
   background-color: rgb(230, 39, 39);
   color: white;

@@ -1,0 +1,21 @@
+.heading{
+  margin: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+input{
+  width: 100%;
+}
+
+.item-container{
+  text-align: left;
+}
+
+.my-row{
+  margin: 10px 5px;
+}
+
+.my-button{
+  min-width: 80px;
+}

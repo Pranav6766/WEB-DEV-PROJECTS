@@ -60,9 +60,7 @@ function toCheckWin() {
       let displayChance = document.querySelector(".info");
       displayChance.textContent = `${element[winningRow[1]].innerText} won!!!`;
       document.querySelector(".line").style.width = "30vw";
-      document.querySelector(
-        ".line"
-      ).style.transform = `translate(${winningRow[3]}vw, ${winningRow[4]}vw) rotate(${winningRow[5]}deg)`;
+      document.querySelector(".line").style.transform = `translate(${winningRow[3]}vw, ${winningRow[4]}vw) rotate(${winningRow[5]}deg)`;
       gameOver.play();
       document.getElementsByTagName("img")[0].style.width = "200px";
       document.querySelectorAll(".box").forEach((box) => {

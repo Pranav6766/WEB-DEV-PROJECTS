@@ -1,0 +1,17 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap
+Elements wrap onto the next line if needed. */
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  margin: 5px 3px;
+}
+
+.button:hover{
+  background-color: bisque;
+}

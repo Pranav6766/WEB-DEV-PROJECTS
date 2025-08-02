@@ -4,12 +4,13 @@ body {
 .main-heading {
   text-align: center;
 }
-#todo-input, #todo-date{
+#todo-input,
+#todo-date {
   font-size: 15px;
   padding: 10px 5px;
 }
 
-.btn{
+.btn {
   background-color: green;
   color: white;
   border: none;
@@ -18,7 +19,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
 }
-.btn-delete{
+.btn-delete {
   background-color: darkred;
   color: white;
   border: none;
@@ -26,7 +27,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
 }
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 200px 150px 100px;
   column-gap: 10px;
@@ -34,4 +35,12 @@ body {
   margin-top: 10px;
   justify-content: center;
   align-items: center;
+}
+.task-counter {
+  position: fixed;
+  top: 1.7rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  text-align: end;
 }

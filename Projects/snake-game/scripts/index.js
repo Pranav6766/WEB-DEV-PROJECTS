@@ -117,6 +117,8 @@ function gameEngine() {
     snakeArr[i + 1] = { ...snakeArr[i] }; //destructuring was important
     //otherwise baad me sra block ek hi block ke reference krta
   }
+  //at this point index 0 and index 1 are at same position
+  //so update the head manually
   snakeArr[0].x += inputDir.x;
   snakeArr[0].y += inputDir.y;
   //display the snake and food

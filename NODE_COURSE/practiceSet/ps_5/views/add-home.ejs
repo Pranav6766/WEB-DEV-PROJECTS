@@ -1,0 +1,17 @@
+<%- include('partials/head') %>
+  <body>
+    <header  class="bg-blue-600 mb-2">
+      <h3 class="text-white text-3xl text-center p-4">Register your Home:</h3>
+    </header>
+    <main>
+      <form action="/host/add-home" method="POST">
+        <input type="text" name="houseName" placeholder="Enter house name" required class="border-2 border-black-300 rounded-lg p-1.5 m-2"/>
+        <input type="number" name="housePrice" placeholder="Enter price(Indian rupee)" required class="border-2 border-black-300 rounded-lg p-1.5 m-2"/>
+        <input type="text" name="houseLocation" placeholder="Enter house location" required class="border-2 border-black-300 rounded-lg p-1.5 m-2"/>
+        <input type="text" name="houseRating" placeholder="Enter house rating" class="border-2 border-black-300 rounded-lg p-1.5 m-2"/>
+        <input type="text" name="houseImage" placeholder="Enter house URL" class="border-2 border-black-300 rounded-lg p-1.5 m-2"/>
+        <input type="submit" value="Register" class="bg-amber-600 text-white p-2 rounded-lg shadow-lg cursor-pointer"/>
+      </form>
+    </main>
+  </body>
+</html>

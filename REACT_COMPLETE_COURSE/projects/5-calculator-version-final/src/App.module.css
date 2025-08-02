@@ -1,0 +1,9 @@
+.calculator {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  border: 2px solid;
+  width: 200px;
+  background-color: rgb(232, 187, 227);
+}
+

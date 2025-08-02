@@ -1,0 +1,45 @@
+<%- include("../partials/head")%>
+  </head>
+  <body> 
+    <style>
+      img{
+        max-width: 20%;
+        margin-right: 50%;
+      }
+    </style>
+      <%- include("../partials/nav")%>
+    <main class="flex justify-center mb-3">
+      <a
+        href="/host/add-home"
+        class="bg-amber-600 text-white p-2 rounded-lg shadow-lg"
+        >Add home</a
+      >
+    </main>
+    <div class="w-full max-w-md mx-auto bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Registered Houses</h2>
+      <ul class="divide-y divide-gray-200">
+        <% registeredHomes.forEach(home => { %>
+          <li class="py-3 flex items-center space-x-4 hover:bg-gray-50 rounded transition-colors">
+            <img src="<%= home.houseImage %>" alt="<%= home.houseName %>" class="w-24 h-24 object-cover rounded">
+            <div class="flex-1 flex flex-col justify-between">
+              <div class="flex justify-between">
+                <div class="text-lg font-medium text-gray-800"><%= home.houseName %></div>
+                <div class=" text-lime-400">
+                  <% if(home.houseRating) { %>
+                    <%= "⭐" + home.houseRating %>
+                  <% } else { %>
+                    No Rating yet
+                  <% } %>
+                </div>
+              </div>
+              <div class="text-gray-600"><%= "Rs." + home.housePrice + "/day" %></div>
+              <div class="text-gray-600"><%= home.houseLocation %></div>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-red-700 self-end">Edit</a>
+              <a href="#" class="bg-red-400 text-white px-4 py-2 rounded shadow hover:bg-red-700 self-end">Delete</a>
+            </div>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>
